@@ -8,11 +8,12 @@ fill(#DBAE39);
   PImage meatballs = loadImage("meatballs.jpg");
   meatballs.resize(220,220);
 image(meatballs, 212-105, 300-110);
- 
-  PImage pepperoni = loadImage("pepperoni.jpg");
-  pepperoni.resize(50,50);
-  image(pepperoni, 160, 200);
-
+PImage bacon = loadImage("bacon.jpg");
+  bacon.resize(30,30);
+image(bacon, 212-105, 300-110);
+ if(mousePressed){
+   image(bacon, mouseX, mouseY);
+ }
 
 
 }
